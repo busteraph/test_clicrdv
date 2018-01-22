@@ -9,3 +9,8 @@ two:
   calendar: :one
   start_at: 2018-01-12 14:00:00
   end_at: 2018-01-12 18:00:00
+
+three:
+  calendar: :one
+  start_at: 2018-01-12 17:00:00
+  end_at: 2018-01-12 18:00:00

@@ -24,7 +24,6 @@ class Admin::InterventionsControllerTest < ActionController::TestCase
         calendar_id: @intervention.calendar_id,
         duration: @intervention.duration,
         name: @intervention.name,
-        price: @intervention.price
       }
     end
 
@@ -46,7 +45,6 @@ class Admin::InterventionsControllerTest < ActionController::TestCase
       calendar_id: @intervention.calendar_id,
       duration: @intervention.duration,
       name: @intervention.name,
-      price: @intervention.price
     }
     assert_redirected_to admin_intervention_path(assigns(:intervention))
   end
