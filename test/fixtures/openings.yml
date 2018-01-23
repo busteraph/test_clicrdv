@@ -18,3 +18,18 @@ three:
   calendar: :one
   start_at: 2018-01-12 17:00:00
   end_at: 2018-01-12 18:00:00
+
+out_begin_boundary:
+  calendar: :one
+  start_at: 2018-01-12 7:00:00
+  end_at: 2018-01-12 9:00:00
+
+out_end_boundary:
+  calendar: :two
+  start_at: 2018-01-12 17:00:00
+  end_at: 2018-01-12 19:00:00
+
+end_before_start:
+  calendar: :two
+  start_at: 2018-01-12 17:00:00
+  end_at: 2018-01-12 9:00:00
