@@ -32,9 +32,10 @@ class OpeningTest < ActiveSupport::TestCase
 	end
 	
 	test "should allow new opening if no ovelapping" do
+	  calendar_one = calendars(:one)
 	  opening_two = openings(:two)
-	  opening_one = openings(:one)
-	  assert opening_three.isnt_overlapping?
+	  opening_new = Opening.new(calendar: calendar_one, start_at: '2018-01-13 09:00:00', end_at: '2018-01-13 12:00:00')
+	  assert opening_new.isnt_overlapping?
 	end
 
 end

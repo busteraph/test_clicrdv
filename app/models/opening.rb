@@ -16,7 +16,8 @@ class Opening < ActiveRecord::Base
   validate :isnt_overlapping?
 
   #Scopes
-  scope :overlapping, -> (opening) { where("start_at <= ? AND ? <= end_at", opening.end_at, opening.start_at) }
+  scope :overlapping, -> (opening) { where("calendar_id = ? AND start_at <= ? AND ? <= end_at",
+  											opening.calendar_id, opening.end_at, opening.start_at) }
 
   def isnt_overlapping?
   	return false if Opening.overlapping(self).count > 0
