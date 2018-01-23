@@ -11,3 +11,15 @@ two:
   duration: 20
   calendar_id: 1
   calendar: :one
+
+three:
+  name: '_massage_'
+  duration: 30
+  calendar_id: 3
+  calendar: :three
+
+four:
+  name: '_hair removal_'
+  duration: 40
+  calendar_id: 3
+  calendar: :three

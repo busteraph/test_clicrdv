@@ -13,3 +13,17 @@ two:
   start_at: 2018-01-12 16:00:00
   end_at: 2018-01-12 16:10:00
   customer_name: 'Robert Dupond'
+
+three:
+  calendar_id: 3
+  intervention_id: 3
+  start_at: 2018-11-01 9:00:00
+  end_at: 2018-11-01 9:40:00
+  customer_name: 'Toto'
+
+four:
+  calendar_id: 3
+  intervention_id: 3
+  start_at: 2018-11-01 9:00:00
+  end_at: 2018-11-01 9:40:00
+  customer_name: 'Toto'
