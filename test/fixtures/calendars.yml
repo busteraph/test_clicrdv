@@ -2,10 +2,13 @@
 
 one:
   name: 'Calendar One'
+  interval: 10
 
 two:
   name: 'Calendar Two'
+  interval: 15
 
 three:
   name: _Dr Dupont_
+  interval: 10
 

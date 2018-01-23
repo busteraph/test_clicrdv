@@ -25,12 +25,16 @@ class OpeningTest < ActiveSupport::TestCase
 	  assert_not opening_end.valid? 
 	end
 
-	# test "should not allow openings ovelapping" do
-	#   opening_two = openings(:two)
-	#   opening_three = openings(:three)
-	#   assert_not opening_three.valid?
-	#   assert_equal 
-	# end
-
+	test "should not allow 2 openings ovelapping" do
+	  opening_two = openings(:two)
+	  opening_three = openings(:three)
+	  assert_not opening_three.isnt_overlapping?
+	end
+	
+	test "should allow new opening if no ovelapping" do
+	  opening_two = openings(:two)
+	  opening_one = openings(:one)
+	  assert opening_three.isnt_overlapping?
+	end
 
 end
