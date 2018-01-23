@@ -9,4 +9,8 @@ class Appointment < ActiveRecord::Base
   validates :start_at, presence: true
   validates :end_at, presence: true
   validates :customer_name, presence: true
+
+  #Scopes
+  scope :for_calendar_and_intervention, -> (calendar, intervention) { where("calendar_id = ? AND intervention_id = ? ",	calendar, intervention) }
+
 end

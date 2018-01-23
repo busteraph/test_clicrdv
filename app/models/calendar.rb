@@ -6,7 +6,10 @@ class Calendar < ActiveRecord::Base
   # Validations
   validates :name, presence: true, uniqueness: true
 
-  def availabilities
-  	""
+  def availabilities(intervention)
+  	openings = self.openings
+  	# interventions = Intervention.for_calendar(self.id)
+  	byebug
+
   end	
 end
