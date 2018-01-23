@@ -5,4 +5,8 @@ class Calendar < ActiveRecord::Base
 
   # Validations
   validates :name, presence: true, uniqueness: true
+
+  def availabilities
+  	""
+  end	
 end
